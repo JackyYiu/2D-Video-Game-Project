@@ -1,16 +1,16 @@
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
-public class ThornBushPurnishment {
+public class ThornBushPunishment extends Environment{
     private static Image image = null;
 
-    ThornBushPurnishment() {
+    ThornBushPunishment() {
         super();
-        if (ThornBushPurnishment.image == null) {
-            ThornBushPurnishment.image = new ImageIcon("images/tree.png").getImage();
+        if (ThornBushPunishment.image == null) {
+            ThornBushPunishment.image = new ImageIcon("images/tree.png").getImage();
         }
     }
 
-    @Override
-    public Image getImage() { return ThornBushPurnishment.image; }
+
+    public Image getImage() { return ThornBushPunishment.image; }
 }
