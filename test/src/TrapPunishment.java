@@ -7,7 +7,7 @@ public class TrapPunishment extends Environment{
     TrapPunishment() {
         super();
         if (TrapPunishment.image == null) {
-            TrapPunishment.image = new ImageIcon("images/tree.png").getImage();
+            TrapPunishment.image = new ImageIcon("images/hero.gif").getImage();
         }
     }
 

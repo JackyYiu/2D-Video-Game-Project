@@ -7,7 +7,7 @@ public class ThornBushPunishment extends Environment{
     ThornBushPunishment() {
         super();
         if (ThornBushPunishment.image == null) {
-            ThornBushPunishment.image = new ImageIcon("images/tree.png").getImage();
+            ThornBushPunishment.image = new ImageIcon("images/hero.gif").getImage();
         }
     }
 

@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b9b8280-5e41-4fd0-b244-1d15f9fe98e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Cell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Character.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Door.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Egg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enemy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Environment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FreezeBonus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hunter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Maze.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoreBonus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeedBonus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ThornBushPunishment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThornBushPunishment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TrapPunishment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrapPunishment.java" afterDir="false" />
     </list>

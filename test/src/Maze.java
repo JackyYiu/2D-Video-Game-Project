@@ -66,6 +66,8 @@ public class Maze extends JPanel implements ActionListener
     public final short EGGFREEZE = 4;
     public final short EGGPOINTS = 5;
     public final short EGGSPEED = 6;
+    public final short TRAP = 7;
+    public final short THORNBUSH = 8;
     public final short[] BONUS = {EGGFREEZE, EGGSPEED,EGGPOINTS};
 
     public Maze()
@@ -94,7 +96,8 @@ public class Maze extends JPanel implements ActionListener
         }
         levelData[4][7] = EGG;
         levelData[5][15] = DOOR;
-
+        levelData[3][3] = THORNBUSH;
+        levelData[7][7] = TRAP;
         initLevel();
 
     }
@@ -144,8 +147,10 @@ public class Maze extends JPanel implements ActionListener
                 switch (levelData[r][c]) {
                     case EMPTY: screenData[r][c] = new Cell(); break;
                     case WALL: screenData[r][c] = new Wall(); break;
-                    case EGG: screenData[r][c] = new Egg();break;
+                    case EGG: screenData[r][c] = new Egg(); break;
                     case DOOR: screenData[r][c] = new Door(); break;
+                    case THORNBUSH: screenData[r][c] = new ThornBushPunishment(); break;
+                    case TRAP: screenData[r][c] = new TrapPunishment(); break;
                 }
             }
         }
@@ -384,6 +389,12 @@ public class Maze extends JPanel implements ActionListener
                 rabbit.setScore(rabbit.getScore() + 1);  // increment score when received egg
                 if (Egg.getCount() == 0)
                     Door.open();
+            }else if (nextEnv instanceof TrapPunishment) {
+                screenData[data[0]][data[1]] = new Cell();
+                rabbit.setScore(rabbit.getScore() - 1);
+            }else if (nextEnv instanceof ThornBushPunishment) {
+                screenData[data[0]][data[1]] = new Cell();
+                rabbit.setScore(rabbit.getScore() - 1);
             } else if (nextEnv instanceof Door) {
                 System.out.println("Win!");
             } else if (nextEnv instanceof ScoreBonus) {  // check for bonuses
